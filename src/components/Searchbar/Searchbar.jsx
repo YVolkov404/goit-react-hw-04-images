@@ -14,7 +14,7 @@ import {
 const searchbarSchema = Yup.object().shape({
   text: Yup.string()
     .min(2, 'Text too short!')
-    .max(30, 'Text too long!')
+    .max(26, 'Text too long!')
     .required('Required'),
 });
 
