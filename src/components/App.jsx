@@ -63,7 +63,7 @@ export const App = () => {
         <Searchbar onSubmit={searchQueryHandler} />
       </Header>
       {images.length !== 0 && <ImageGallery images={images} />}
-      {images.length > 0 && page < total && (
+      {images.length >= 12 && page < total && (
         <LoadMoreButton title="Load more" onClick={loadMoreBtnHandler} />
       )}
     </Container>
